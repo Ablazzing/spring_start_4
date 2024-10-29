@@ -1,4 +1,4 @@
-package com.javaacademy.factory;
+package spring_factory;
 
 import lombok.ToString;
 

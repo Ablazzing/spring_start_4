@@ -1,4 +1,4 @@
-package credit;
+package credit.calc;
 
 
 import org.springframework.stereotype.Component;

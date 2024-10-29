@@ -1,8 +1,10 @@
-package com.javaacademy.factory;
+package spring_factory;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
+import javax.annotation.PreDestroy;
 import java.math.BigDecimal;
 
 @Data
@@ -15,6 +17,7 @@ public class Worker {
         money = money.add(salary);
     }
 
+    @PreDestroy
     public void sayMyMoney() {
         log.info("{} заработал: {}", name, money);
     }
